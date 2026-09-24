@@ -3,14 +3,14 @@
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const nav = document.getElementById("nav");
-  const onScroll = () => nav.classList.toggle("scrolled", scrollY > 12);
+  const onScroll = () => { if (!nav.hasAttribute("data-solid")) nav.classList.toggle("scrolled", scrollY > 12); };
   addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
   document.getElementById("yr").textContent = new Date().getFullYear();
 
   // Reveal on scroll.
-  const targets = document.querySelectorAll(".stats, .feature, .card, .timeline > li, .team, .m, .pubs li, .posts li, .tools > div, .contact-inner");
+  const targets = document.querySelectorAll(".stats, .feature, .card, .vcard, .v-featured, .vteaser, .timeline > li, .team, .m, .pubs li, .posts li, .tools > div, .contact-inner");
   if ("IntersectionObserver" in window && !reduce) {
     targets.forEach((el) => el.classList.add("reveal"));
     const io = new IntersectionObserver((entries) => entries.forEach((e) => {
@@ -20,7 +20,7 @@
   }
 
   // Project filters.
-  const buttons = document.querySelectorAll(".filters button");
+  const buttons = document.querySelectorAll("#projects .filters button");
   const cards = document.querySelectorAll(".card");
   buttons.forEach((b) => b.addEventListener("click", () => {
     buttons.forEach((x) => x.setAttribute("aria-selected", String(x === b)));
