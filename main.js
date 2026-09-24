@@ -10,7 +10,7 @@
   document.getElementById("yr").textContent = new Date().getFullYear();
 
   // Reveal on scroll.
-  const targets = document.querySelectorAll(".stats, .feature, .card, .timeline li, .tools > div, .contact-inner");
+  const targets = document.querySelectorAll(".stats, .feature, .card, .timeline > li, .team, .pubs li, .posts li, .tools > div, .contact-inner");
   if ("IntersectionObserver" in window && !reduce) {
     targets.forEach((el) => el.classList.add("reveal"));
     const io = new IntersectionObserver((entries) => entries.forEach((e) => {
