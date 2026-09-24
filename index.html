@@ -1,147 +1,313 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Sihab Sahariar | Portfolio | Resume</title>
-	<link rel="shortcut icon" href="img/favicon.png"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-	<meta charset="UTF-8">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Nunito:200,400" rel="stylesheet">
-	<link href="./css/Avnir-next.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="./css/marquee.css"/>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sihab Sahariar - Computer vision, robotics & desktop software</title>
+  <meta name="description" content="Sihab Sahariar is a software engineer from Dhaka building computer vision, robotics and desktop software. Co-founder & CTO at Techub, maker of Umbra and ForensicVision.">
+  <meta name="theme-color" content="#0A0B0A">
+  <meta property="og:title" content="Sihab Sahariar - I build software that sees">
+  <meta property="og:description" content="Computer vision, robotics and desktop software. Co-founder & CTO at Techub. Maker of Umbra and ForensicVision.">
+  <meta property="og:image" content="https://sihabsahariar.github.io/assets/sihab.jpg">
+  <meta property="og:url" content="https://sihabsahariar.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@SihabSizan">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gh" viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18.2 2.3h3.4l-7.4 8.4 8.7 11.5h-6.8l-5.3-7-6.1 7H1.3l7.9-9L.8 2.3h7l4.8 6.4 5.6-6.4Zm-1.2 17.9h1.9L7.1 4.2H5.1l11.9 16Z"/></symbol>
+  <symbol id="i-md" viewBox="0 0 24 24"><path d="M13.5 12a6.8 6.8 0 1 1-13.5 0 6.8 6.8 0 0 1 13.5 0Zm7.4 0c0 3.5-1.5 6.4-3.4 6.4s-3.4-2.9-3.4-6.4 1.5-6.4 3.4-6.4 3.4 2.9 3.4 6.4ZM24 12c0 3.2-.5 5.7-1.2 5.7s-1.2-2.6-1.2-5.7.5-5.7 1.2-5.7S24 8.8 24 12Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9L12 2.8Z"/></symbol>
+</svg>
 
-	<div class="hello" style="position: fixed;">
-			<div class="marquee marquee-slower">
-				<div>
-					<span>Hi <span class="spacer"></span> HEllo</span>
-					<span>What's up? <span class="spacer"></span> Welcome</span>
-				</div>
-			</div>
-			<div class="marquee">
-				<div>
-					<span>How are you? <span class="spacer"></span> You good?</span>
-					<span>Hello <span class="spacer"></span>You good?</span>
-				</div>
-			</div>
-			<div class="marquee marquee-slow">
-				<div>
-					<span>What's up? <span class="spacer"></span> Hello</span>
-					<span>How are you? <span class="spacer"></span>Welcome</span>
-				</div>
-			</div>
-			<!-- <div class="marquee marquee-slower">
-				<div>
-					<span>আসসালামুয়ালাইকুম <span class="spacer"></span>কেমন আছেন? </span>
-				</div>
-			</div> -->
-	</div>
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="Sihab Sahariar, home"><span class="logo-box">SS</span><span class="logo-name">Sihab Sahariar</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-lime btn-sm" href="mailto:sihabsahariarcse@gmail.com">Say hello</a>
+  </div>
+</header>
 
-	<img src="img/frame.png" class="frame">
+<main id="top">
 
-		<div class="profile">
-		<div>
-			<div class="thumb">
-				<img src="img/my.jpg">
-			</div>
-			<h1>Sihab Sahariar</h1>
-			<p>Software Developer</p>
-			<p>CSE Undergraduate Student | BRAC University</p>
-			
-			<a href="mailto:sihabsahariarcsegmail.com">
-			<img class="email" src="img/email.png" width="290">
-		</a>
-		</div>
-	</div>
+<!-- ================================================================ HERO -->
+<section class="hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="tag"><span class="rec"></span><span>Dhaka, Bangladesh · Co-founder &amp; CTO at <a href="https://techub.kr/">Techub</a></span></p>
+      <h1>I build software<br>that <span class="sees">sees<span class="bracket" aria-hidden="true"></span></span>.</h1>
+      <p class="lede">I'm Sihab Sahariar, a software engineer working where computer vision, robotics and desktop apps meet. I've built Mars-rover control software, ADAS interfaces and real-time detection pipelines, and I ship open-source tools like <a href="https://sihabsahariar.github.io/Umbra/">Umbra</a> and <a href="https://sihabsahariar.github.io/ForensicVision/">ForensicVision</a>.</p>
+      <div class="cta">
+        <a class="btn btn-lime" href="#work">See my work</a>
+        <a class="btn btn-ghost" href="https://github.com/SihabSahariar"><svg class="ico"><use href="#i-gh"/></svg>GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/sihabsahariar/"><svg class="ico"><use href="#i-in"/></svg>LinkedIn</a>
+      </div>
+    </div>
 
-	<div class="content">
-		<div class="about_me">
-			<h1>ABOUT ME</h1>
-			<p>I’m a 21-years-old UI/UX designer and a software developer lives in Dhaka,Bangladesh. 
-			I’ve nearly 2 years of experience as a softwere developer. Currently, I am working with Team Error as CEO.
-			On education part, I'm doing BSc in CSE in Brac University.</p>
-			<p>I have good knowledge of development in  Python,Java, Visual Basic and C/C++.</p>
-			<p>I'm a passionate competetitve programmer.</p>
-			<span class="icon-link">
-				<a href="https://github.com/sihabsahariar?tab=repositories">
-				<i class="fa fa-github" aria-hidden="true"></i>&nbsp;Github
-				</a>
-			</span>
-			
-			<span class="icon-link">
-				<a href="mailto:sihabsahariarcse@gmail.com">
-				<i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;sihabsahariarcse@gmail.com
-				</a>
-			</span>
-			</div>
+    <figure class="viewfinder" aria-label="Photo of Sihab with a humanoid robot, overlaid with object-detection boxes">
+      <img src="assets/sihab.jpg" alt="Sihab Sahariar standing next to a white humanoid robot, making a peace sign" width="460" height="460">
+      <div class="scan" aria-hidden="true"></div>
+      <div class="det det-person" aria-hidden="true"><span>person 0.97</span></div>
+      <div class="det det-robot" aria-hidden="true"><span>robot 0.94</span></div>
+      <div class="hud hud-tl" aria-hidden="true">CAM 01 · LIVE</div>
+      <div class="hud hud-br" aria-hidden="true"><span id="fps">30</span> FPS · YOLOv11 · ONNX</div>
+      <i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i>
+    </figure>
+  </div>
 
-		<div class="skills">
-			<h1>SKILLS</h1>
-			<p>HTML / CSS / JS</p>
-			<div class="progress-bar">
-				<div class="progress" style="width: 90%"></div>
-			</div>
-			<p>Visual Basic</p>
-			<div class="progress-bar">
-				<div class="progress" style="width: 95%"></div>
-			</div>
-			<p>Python</p>
-			<div class="progress-bar">
-				<div class="progress" style="width: 90%"></div>
-			</div>
-			<p>C & C++</p>
-			<div class="progress-bar">
-				<div class="progress" style="width: 80%"></div>
-			</div>
-			<p>Java</p>
-			<div class="progress-bar">
-				<div class="progress" style="width: 65%"></div>
-			</div>
-			
-			
-			<br>
-			<h3>In addition, I have a good knowledge on version control systems such as Github and Bitbucket.</h3> 
-			<h3>Also, I love to do solving problems regularly.Here is my Stopstalk User link:   
-				<a href="https://www.stopstalk.com/user/profile/s1h4b" target="_blank">Stopstalk</a> 
-				<!-- <a href="https://ionicframework.com/" target="_blank">Ionic</a>, 
-				<a href="https://www.nativescript.org/" target="_blank">NativeScript</a> and transpilers like Webpack, Gulp, Babel and Typescript.</h3> -->
-		</div>
+  <div class="wrap">
+    <dl class="stats">
+      <div><dt>Public repositories</dt><dd>412</dd></div>
+      <div><dt>On GitHub since</dt><dd>2015</dd></div>
+      <div><dt>Rover teams led</dt><dd>2</dd></div>
+      <div><dt>Focus</dt><dd class="small">CV · Robotics · Desktop</dd></div>
+    </dl>
+  </div>
+</section>
 
-		<div class="projects">
-			<h1>Projects</h1>
-			<ul>
-				<li>
-					<img class="project-thumb" width="100px" src="img/projects/ui.JPG">
-					<div class="title">
-						<h2>Student Information System</h2>
-						<h3>Windows</h3>
-					</div>
-					<p>It is a software that stores information of students.Basically it's an institute maintenance software.  </p>
-					<a href="https://github.com/SihabSahariar/sis"><i class="fa fa-eye" aria-hidden="true"></i> View</a>
-				</li>
+<!-- ================================================================ FEATURED -->
+<section class="section" id="work">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker">01 · Featured work</p>
+      <h2>Things I've shipped recently.</h2>
+    </header>
 
-				<!-- <li>
-					<img class="project-thumb" width="100px" src="img/projects/ui.JPG">
-					<div class="title">
-						<h2>Student Information System</h2>
-						<h3>Windows</h3>
-					</div>
-					<p>It is a software that stores information of students.Basically it's an institute maintenance software.  </p>
-					<a href="https://github.com/SihabSahariar/sis"><i class="fa fa-eye" aria-hidden="true"></i> View</a>
-				</li> -->
-			
-			</ul>
-		</div>
+    <article class="feature">
+      <a class="feature-media" href="https://sihabsahariar.github.io/Umbra/" aria-label="Open the Umbra website">
+        <img src="assets/umbra.jpg" alt="Umbra has blurred the screen because the person on the webcam turned away" loading="lazy" width="1280" height="720">
+      </a>
+      <div class="feature-copy">
+        <p class="feature-meta">2026 · Windows app · Open source</p>
+        <h3>Umbra</h3>
+        <p>A privacy screen for Windows. It uses the webcam and on-device face tracking to notice when you look away, and hides your screen until you look back. It includes a guided calibration that fits it to each person's desk, four cover styles and a tray app with a global hotkey.</p>
+        <ul class="chips"><li>Python</li><li>MediaPipe</li><li>OpenCV</li><li>PyQt5</li></ul>
+        <div class="links">
+          <a href="https://sihabsahariar.github.io/Umbra/">Website <svg class="ico-s"><use href="#i-arrow"/></svg></a>
+          <a href="https://github.com/SihabSahariar/Umbra">Source <svg class="ico-s"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </article>
 
-		<div class="footer">
-			<i class="fa fa-code"></i> by <a href="https://www.facebook.com/sihabsahariarsizan">Sihab Sahariar</a>, Hosted on <i class="fa fa-github"></i> <a href="https://www.github.com">Github<i class="fa fa-heart"></i><br>
-		</div>
-	</div>
+    <article class="feature flip">
+      <a class="feature-media" href="https://sihabsahariar.github.io/ForensicVision/" aria-label="Open the ForensicVision website">
+        <img src="assets/forensicvision.jpg" alt="ForensicVision main window with a CCTV evidence image and a case inspector panel" loading="lazy" width="1600" height="899">
+      </a>
+      <div class="feature-copy">
+        <p class="feature-meta">2026 · Desktop workstation · Open source</p>
+        <h3>ForensicVision</h3>
+        <p>A native desktop workstation for forensic image analysis and enhancement that tells you which parts of a result were measured and which were invented. It covers case management, integrity hashes, AI restoration and super-resolution, comparison views and PDF reports.</p>
+        <ul class="chips"><li>Python</li><li>Image forensics</li><li>Super-resolution</li><li>CUDA</li></ul>
+        <div class="links">
+          <a href="https://sihabsahariar.github.io/ForensicVision/">Website <svg class="ico-s"><use href="#i-arrow"/></svg></a>
+          <a href="https://github.com/SihabSahariar/ForensicVision">Source <svg class="ico-s"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
-	<script src="js/jquery.min.js"></script>
+<!-- ================================================================ PROJECTS -->
+<section class="section alt" id="projects">
+  <div class="wrap">
+    <header class="sec-head row">
+      <div>
+        <p class="kicker">02 · Selected projects</p>
+        <h2>From the lab and the field.</h2>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter projects">
+        <button role="tab" aria-selected="true" data-f="all">All</button>
+        <button role="tab" aria-selected="false" data-f="cv">Computer vision</button>
+        <button role="tab" aria-selected="false" data-f="robotics">Robotics</button>
+        <button role="tab" aria-selected="false" data-f="desktop">Desktop apps</button>
+      </div>
+    </header>
+
+    <div class="cards" id="cards">
+      <a class="card" data-cat="desktop" href="https://github.com/SihabSahariar/Smart-CAR-Dashboard-GUI-in-Python">
+        <div class="card-top"><span class="card-kind">HMI · Desktop</span><span class="stars"><svg><use href="#i-star"/></svg>51</span></div>
+        <h3>Car Dashboard HMI</h3>
+        <p>An in-car dashboard prototype with a speedometer, fuel status, date and time, built in Python. My most-starred and most-forked repo.</p>
+        <ul class="chips"><li>Python</li><li>PyQt5</li></ul>
+      </a>
+      <a class="card" data-cat="cv" href="https://github.com/SihabSahariar/Multi-threading-OpenCV-">
+        <div class="card-top"><span class="card-kind">Computer vision</span><span class="stars"><svg><use href="#i-star"/></svg>18</span></div>
+        <h3>Multi-threaded OpenCV streaming</h3>
+        <p>Faster real-time video processing by moving frame capture onto its own thread, with a threaded vs. non-threaded benchmark and a Medium write-up.</p>
+        <ul class="chips"><li>Python</li><li>OpenCV</li></ul>
+      </a>
+      <a class="card" data-cat="cv" href="https://github.com/SihabSahariar/Yolov11-ONNX-Object-Detection">
+        <div class="card-top"><span class="card-kind">Computer vision</span><span class="stars"><svg><use href="#i-star"/></svg>15</span></div>
+        <h3>YOLOv11 + ONNX detection</h3>
+        <p>Python scripts running object detection with the YOLOv11 model exported to ONNX, so inference runs without a full deep-learning framework.</p>
+        <ul class="chips"><li>YOLOv11</li><li>ONNX Runtime</li></ul>
+      </a>
+      <a class="card" data-cat="robotics" href="https://github.com/SihabSahariar/Mars-Rover-Control-System">
+        <div class="card-top"><span class="card-kind">Robotics</span><span class="stars"><svg><use href="#i-star"/></svg>14</span></div>
+        <h3>Mars Rover Control System</h3>
+        <p>My research code and documents from the Mars-rover control &amp; AI team: a PyQt control GUI with camera feeds and GPS map readout, data recording and robot feedback.</p>
+        <ul class="chips"><li>Python</li><li>PyQt</li><li>GPS</li></ul>
+      </a>
+      <a class="card" data-cat="robotics cv" href="https://github.com/SihabSahariar/Computer-Vision-Based-Rover-Navigation-Avoiding-Obstacle">
+        <div class="card-top"><span class="card-kind">Robotics · CV</span><span class="stars"><svg><use href="#i-star"/></svg>8</span></div>
+        <h3>Vision-based rover navigation</h3>
+        <p>Basic obstacle avoidance and navigation for a rover using Python and OpenCV, driven by a single camera.</p>
+        <ul class="chips"><li>Python</li><li>OpenCV</li></ul>
+      </a>
+      <a class="card" data-cat="cv desktop" href="https://github.com/SihabSahariar/porichita-ekyc">
+        <div class="card-top"><span class="card-kind">AI · Identity</span><span class="stars"><svg><use href="#i-star"/></svg>1</span></div>
+        <h3>Porichita AI eKYC</h3>
+        <p>Face verification and enrollment with real-time liveness checks (head tilts, blinks), Facenet512 matching and a PyQt5 dashboard.</p>
+        <ul class="chips"><li>MediaPipe</li><li>DeepFace</li><li>PyQt5</li></ul>
+      </a>
+      <a class="card" data-cat="cv" href="https://github.com/SihabSahariar/Yolov8-Real-time-People-Counting-System">
+        <div class="card-top"><span class="card-kind">Computer vision</span><span class="stars"><svg><use href="#i-star"/></svg>3</span></div>
+        <h3>Real-time people counting</h3>
+        <p>Detects and tracks people in video with YOLOv8 to count them in real time.</p>
+        <ul class="chips"><li>YOLOv8</li><li>Tracking</li></ul>
+      </a>
+      <a class="card" data-cat="cv desktop" href="https://github.com/SihabSahariar/iDocument-Scanner">
+        <div class="card-top"><span class="card-kind">CV · Desktop</span></div>
+        <h3>iDocument Scanner</h3>
+        <p>A document scanner with automatic edge detection, perspective correction and EasyOCR text extraction, processing many images concurrently.</p>
+        <ul class="chips"><li>OpenCV</li><li>EasyOCR</li><li>PyQt5</li></ul>
+      </a>
+      <a class="card" data-cat="cv" href="https://github.com/SihabSahariar/OpenADAS">
+        <div class="card-top"><span class="card-kind">ADAS · CV</span><span class="stars"><svg><use href="#i-star"/></svg>1</span></div>
+        <h3>OpenADAS lane detection</h3>
+        <p>A lane-line detection system for driver assistance built on classical OpenCV techniques, without any learned model.</p>
+        <ul class="chips"><li>OpenCV</li><li>NumPy</li></ul>
+      </a>
+      <a class="card" data-cat="desktop" href="https://github.com/SihabSahariar/PySort-GUI">
+        <div class="card-top"><span class="card-kind">Desktop</span><span class="stars"><svg><use href="#i-star"/></svg>5</span></div>
+        <h3>PySort GUI</h3>
+        <p>A PyQt5 app that visualises how different sorting algorithms shuffle and sort data.</p>
+        <ul class="chips"><li>Python</li><li>PyQt5</li></ul>
+      </a>
+      <a class="card" data-cat="desktop cv" href="https://github.com/SihabSahariar/GStreamer-With-PyQt5">
+        <div class="card-top"><span class="card-kind">Video · Desktop</span><span class="stars"><svg><use href="#i-star"/></svg>4</span></div>
+        <h3>GStreamer with PyQt5</h3>
+        <p>Plays GStreamer video pipelines inside a PyQt5 interface: a building block for camera and streaming apps.</p>
+        <ul class="chips"><li>GStreamer</li><li>PyQt5</li></ul>
+      </a>
+      <a class="card" data-cat="robotics desktop" href="https://github.com/SihabSahariar/BRACU-Mongoltori-GUI">
+        <div class="card-top"><span class="card-kind">Robotics</span><span class="stars"><svg><use href="#i-star"/></svg>1</span></div>
+        <h3>Mongol-Tori rover GUI</h3>
+        <p>Control interface for BRACU Mongol Tori, BRAC University's next-generation Mars rover.</p>
+        <ul class="chips"><li>Python</li><li>PyQt</li></ul>
+      </a>
+    </div>
+    <p class="more"><a href="https://github.com/SihabSahariar?tab=repositories">Browse all 400+ repositories on GitHub <svg class="ico-s"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- ================================================================ EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="wrap exp-grid">
+    <header class="sec-head sticky">
+      <p class="kicker">03 · Experience</p>
+      <h2>Where I've built things.</h2>
+      <p class="sec-sub">From university rover teams to leading engineering at a startup.</p>
+    </header>
+    <ol class="timeline">
+      <li class="now">
+        <p class="t-when">Now</p>
+        <h3>Co-founder &amp; CTO</h3>
+        <p class="t-org"><a href="https://techub.kr/">Techub</a></p>
+      </li>
+      <li>
+        <p class="t-when">Previously</p>
+        <h3>Senior Software Engineer (AI)</h3>
+        <p class="t-org">Lynkeus</p>
+      </li>
+      <li>
+        <p class="t-when">Previously</p>
+        <h3>Software Development Engineer</h3>
+        <p class="t-org">iBAnalytica</p>
+      </li>
+      <li>
+        <p class="t-when">University team</p>
+        <h3>Team Lead</h3>
+        <p class="t-org">BRACU DICHARI</p>
+        <p>Led the team, with a focus on rover control, AI and autonomy.</p>
+      </li>
+      <li>
+        <p class="t-when">University team</p>
+        <h3>Sub-Team Lead, Control &amp; Software</h3>
+        <p class="t-org">BRACU Mongol-Tori, BRAC University's Mars rover team</p>
+      </li>
+      <li>
+        <p class="t-when">Previously</p>
+        <h3>GUI Developer</h3>
+        <p class="t-org">acciGone, an ADAS development company</p>
+      </li>
+      <li class="edu">
+        <p class="t-when">Education</p>
+        <h3>BSc in Computer Science &amp; Engineering</h3>
+        <p class="t-org">BRAC University, Dhaka</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================================================================ TOOLKIT -->
+<section class="section alt" id="toolkit">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker">04 · Toolkit</p>
+      <h2>What I reach for.</h2>
+    </header>
+    <div class="tools">
+      <div><h3>Languages</h3><ul class="chips big"><li>Python</li><li>C / C++</li><li>Java</li><li>TypeScript</li><li>Bash</li><li>HTML / CSS</li></ul></div>
+      <div><h3>Vision &amp; ML</h3><ul class="chips big"><li>OpenCV</li><li>YOLO</li><li>ONNX</li><li>MediaPipe</li><li>TensorFlow</li><li>NumPy / Pandas</li></ul></div>
+      <div><h3>Desktop &amp; apps</h3><ul class="chips big"><li>PyQt5</li><li>GStreamer</li><li>Flask</li><li>React</li></ul></div>
+      <div><h3>Robotics &amp; embedded</h3><ul class="chips big"><li>ROS</li><li>NVIDIA Jetson</li><li>Raspberry Pi</li><li>Arduino</li></ul></div>
+      <div><h3>Data &amp; cloud</h3><ul class="chips big"><li>AWS</li><li>MongoDB</li><li>MySQL</li><li>GitHub Pages</li></ul></div>
+      <div><h3>Also</h3><ul class="chips big"><li>Competitive programming</li><li><a href="https://www.stopstalk.com/user/profile/s1h4b">StopStalk</a></li><li><a href="https://sihabsahariar.medium.com/">Writing on Medium</a></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================ CONTACT -->
+<section class="contact" id="contact">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="wrap contact-inner">
+    <p class="kicker">05 · Contact</p>
+    <h2>Building something<br class="br-lg"> that needs to see?</h2>
+    <p>I'm always up for talking computer vision, robotics or a hard desktop-app problem.</p>
+    <a class="mail" href="mailto:sihabsahariarcse@gmail.com">sihabsahariarcse@gmail.com<svg class="ico-s"><use href="#i-arrow"/></svg></a>
+    <ul class="socials">
+      <li><a href="https://github.com/SihabSahariar"><svg><use href="#i-gh"/></svg>GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/sihabsahariar/"><svg><use href="#i-in"/></svg>LinkedIn</a></li>
+      <li><a href="https://twitter.com/SihabSizan"><svg><use href="#i-x"/></svg>@SihabSizan</a></li>
+      <li><a href="https://sihabsahariar.medium.com/"><svg><use href="#i-md"/></svg>Medium</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="yr">2026</span> Sihab Sahariar · Dhaka, Bangladesh</p>
+    <p>Hand-built, hosted on GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
